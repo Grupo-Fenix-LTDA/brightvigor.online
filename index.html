@@ -1,0 +1,672 @@
+<!-- 23eadc1e2549be50 -->
+<!doctype html>
+<html lang="pt-BR">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Bright Vigor Lavanderia | Lavagem, passadoria e cuidado profissional com roupas — Brightvigor</title>
+
+<meta name="theme-color" content="#0c3330">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,600;12..96,700;12..96,800&family=Hanken+Grotesk:wght@400;500;600;700&display=swap" rel="stylesheet">
+<style>
+  :root{
+    --ink:#0c3330;
+    --ink-soft:#234b47;
+    --teal:#0e6e66;
+    --teal-deep:#0a4f49;
+    --teal-bright:#16958a;
+    --aqua:#3fc6b8;
+    --aqua-soft:#9fe6dc;
+    --paper:#fbfdfc;
+    --linen:#eaf5f2;
+    --linen-2:#e1efeb;
+    --line:#d3e7e2;
+    --muted:#5b756f;
+    --white:#ffffff;
+    --shadow-sm:0 8px 24px rgba(10,79,73,.07);
+    --shadow:0 22px 60px rgba(10,79,73,.14);
+    --radius:18px;
+    --radius-lg:26px;
+    --maxw:1140px;
+    --display:"Bricolage Grotesque", "Hanken Grotesk", system-ui, sans-serif;
+    --body:"Hanken Grotesk", system-ui, -apple-system, Segoe UI, Roboto, sans-serif;
+  }
+
+  *{box-sizing:border-box}
+  html{scroll-behavior:smooth}
+  body{
+    margin:0;
+    font-family:var(--body);
+    color:var(--ink);
+    background:var(--paper);
+    line-height:1.62;
+    -webkit-font-smoothing:antialiased;
+    text-rendering:optimizeLegibility;
+  }
+  a{color:inherit}
+  img,svg{display:block}
+  ::selection{background:var(--aqua-soft);color:var(--ink)}
+
+  .qin3_wrap{width:min(var(--maxw), calc(100% - 40px));margin-inline:auto}
+
+  /* ---------- Type ---------- */
+  h1,h2,h3{font-family:var(--display);margin:0;line-height:1.05;letter-spacing:-.02em}
+  h1{font-size:clamp(40px,5.6vw,68px);font-weight:800;letter-spacing:-.035em}
+  h2{font-size:clamp(28px,3.8vw,44px);font-weight:700;letter-spacing:-.03em}
+  h3{font-size:21px;font-weight:700;letter-spacing:-.01em}
+  p{margin:0 0 16px}
+
+  .qin3_eyebrow{
+    display:inline-flex;align-items:center;gap:9px;
+    font-family:var(--body);font-weight:700;font-size:12.5px;
+    letter-spacing:.16em;text-transform:uppercase;color:var(--teal);
+  }
+  .qin3_eyebrow::before{content:"";width:26px;height:1.5px;background:var(--aqua);border-radius:2px}
+  .qin3_lead{font-size:clamp(17px,1.6vw,19px);color:var(--ink-soft)}
+
+  /* ---------- Buttons ---------- */
+  .qin3_btn{
+    display:inline-flex;align-items:center;justify-content:center;gap:9px;
+    padding:14px 22px;border-radius:999px;text-decoration:none;
+    font-weight:700;font-size:15px;border:1.5px solid transparent;
+    transition:transform .18s ease, background .18s ease, box-shadow .18s ease, border-color .18s ease;
+    cursor:pointer;white-space:nowrap;
+  }
+  .qin3_btn svg{width:16px;height:16px}
+  .qin3_btn-primary{background:var(--teal);color:#fff;box-shadow:0 12px 26px rgba(14,110,102,.28)}
+  .qin3_btn-primary:hover{background:var(--teal-deep);transform:translateY(-2px);box-shadow:0 16px 34px rgba(14,110,102,.34)}
+  .qin3_btn-ghost{background:transparent;color:var(--ink);border-color:var(--line)}
+  .qin3_btn-ghost:hover{border-color:var(--teal);color:var(--teal);transform:translateY(-2px)}
+  .qin3_btn-light{background:#fff;color:var(--teal-deep);border-color:rgba(255,255,255,.6)}
+  .qin3_btn-light:hover{transform:translateY(-2px);box-shadow:var(--shadow-sm)}
+
+  /* ---------- Topbar ---------- */
+  .qin3_topbar{background:var(--ink);color:#cfe7e2;font-size:13px}
+  .qin3_topbar .qin3_wrap{display:flex;justify-content:space-between;align-items:center;gap:14px;flex-wrap:wrap;padding:9px 0;min-height:38px}
+  .qin3_topbar a{color:#fff;text-decoration:none;font-weight:600}
+  .qin3_topbar a:hover{color:var(--aqua-soft)}
+  .qin3_topbar .qin3_tb-tag{display:inline-flex;align-items:center;gap:8px;color:#aacfc9}
+  .qin3_dot{width:6px;height:6px;border-radius:50%;background:var(--aqua);display:inline-block;flex:none;box-shadow:0 0 0 4px rgba(63,198,184,.18)}
+
+  /* ---------- Header ---------- */
+  header.qin3_site{position:sticky;top:0;z-index:60;background:rgba(251,253,252,.82);backdrop-filter:blur(12px);border-bottom:1px solid var(--line)}
+  .qin3_nav{display:flex;align-items:center;justify-content:space-between;gap:20px;padding:14px 0}
+  .qin3_brand{display:flex;align-items:center;gap:12px;text-decoration:none}
+  .qin3_brand .qin3_mark{width:42px;height:42px;border-radius:12px;background:linear-gradient(150deg,var(--teal),var(--teal-deep));display:grid;place-items:center;flex:none;box-shadow:0 8px 18px rgba(14,110,102,.3)}
+  .qin3_brand .qin3_mark svg{width:24px;height:24px}
+  .qin3_brand .qin3_name{display:flex;flex-direction:column;line-height:1.05}
+  .qin3_brand .qin3_name b{font-family:var(--display);font-size:21px;font-weight:800;letter-spacing:-.03em;color:var(--ink)}
+  .qin3_brand .qin3_name span{font-size:11.5px;letter-spacing:.04em;color:var(--muted);text-transform:uppercase;font-weight:600}
+
+  .menu{display:flex;align-items:center;gap:6px}
+  .menu a{text-decoration:none;color:var(--ink-soft);font-weight:600;font-size:15px;padding:8px 14px;border-radius:999px;transition:color .15s, background .15s}
+  .menu a:hover{color:var(--teal);background:var(--linen)}
+  .menu a.active{color:var(--teal);background:var(--linen)}
+  .qin3_nav-cta{display:flex;align-items:center;gap:10px}
+  .qin3_nav-cta .qin3_btn{padding:11px 18px;font-size:14px}
+
+  .burger{display:none;width:44px;height:44px;border-radius:12px;border:1px solid var(--line);background:#fff;cursor:pointer;align-items:center;justify-content:center}
+  .burger span{position:relative;width:18px;height:2px;background:var(--ink);border-radius:2px;transition:.2s}
+  .burger span::before,.burger span::after{content:"";position:absolute;left:0;width:18px;height:2px;background:var(--ink);border-radius:2px;transition:.2s}
+  .burger span::before{top:-6px}.burger span::after{top:6px}
+  body.nav-open .burger span{background:transparent}
+  body.nav-open .burger span::before{top:0;transform:rotate(45deg)}
+  body.nav-open .burger span::after{top:0;transform:rotate(-45deg)}
+
+  /* ---------- Hero ---------- */
+  .qin3_hero{position:relative;overflow:hidden;background:
+      radial-gradient(120% 90% at 88% -10%, rgba(63,198,184,.22), transparent 46%),
+      radial-gradient(90% 70% at 0% 110%, rgba(22,149,138,.10), transparent 50%),
+      linear-gradient(180deg,#fff 0%, var(--linen) 100%)}
+  .qin3_hero::after{content:"";position:absolute;inset:0;background-image:
+      radial-gradient(rgba(14,110,102,.06) 1px, transparent 1.4px);background-size:22px 22px;mask-image:linear-gradient(180deg,transparent,#000 30%, #000 70%, transparent);opacity:.5;pointer-events:none}
+  .qin3_hero .qin3_wrap{position:relative;z-index:1;display:grid;grid-template-columns:1.08fr .92fr;gap:54px;align-items:center;padding:76px 0 84px}
+  .qin3_hero h1{margin:18px 0 8px}
+  .qin3_hero h1 .hl{color:var(--teal)}
+  .qin3_hero .qin3_lead{max-width:560px}
+  .qin3_cta-row{display:flex;gap:14px;flex-wrap:wrap;margin-top:30px}
+  .qin3_trust{display:flex;gap:22px;flex-wrap:wrap;margin-top:30px;padding-top:24px;border-top:1px dashed var(--line)}
+  .qin3_trust .ti{display:flex;align-items:center;gap:10px;color:var(--ink-soft);font-weight:600;font-size:14.5px}
+  .qin3_trust .ti svg{width:20px;height:20px;color:var(--teal);flex:none}
+
+  /* Care tag — signature element */
+  .qin3_tag{
+    position:relative;background:#fff;border:1px solid var(--line);border-radius:22px;
+    padding:26px 26px 22px;box-shadow:var(--shadow);transform:rotate(-1.4deg);
+  }
+  .qin3_tag::before{content:"";position:absolute;top:22px;left:-9px;width:18px;height:18px;border-radius:50%;background:var(--linen);border:1px solid var(--line)}
+  .qin3_tag::after{content:"";position:absolute;top:30px;left:-1px;width:2px;height:calc(100% - 60px);background:repeating-linear-gradient(180deg,var(--line) 0 6px,transparent 6px 12px)}
+  .qin3_tag .qin3_tag-top{display:flex;align-items:center;justify-content:space-between;gap:12px;margin-bottom:18px}
+  .qin3_tag .qin3_tag-top b{font-family:var(--display);font-size:17px;letter-spacing:-.02em}
+  .qin3_tag .qin3_tag-top .qin3_pill{font-size:11px;font-weight:700;letter-spacing:.08em;text-transform:uppercase;color:var(--teal);background:var(--linen);padding:5px 10px;border-radius:999px}
+  .qin3_tag .qin3_symbols{display:grid;grid-template-columns:repeat(4,1fr);gap:10px;margin-bottom:18px}
+  .qin3_tag .qin3_sym{aspect-ratio:1;border:1px solid var(--line);border-radius:14px;display:grid;place-items:center;color:var(--teal-deep);background:linear-gradient(180deg,#fff,var(--linen))}
+  .qin3_tag .qin3_sym svg{width:26px;height:26px}
+  .qin3_tag .qin3_tag-list{margin:0;padding:0;list-style:none;display:grid;gap:11px}
+  .qin3_tag .qin3_tag-list li{display:flex;align-items:flex-start;gap:10px;font-size:14.5px;color:var(--ink-soft);font-weight:500}
+  .qin3_tag .qin3_tag-list svg{width:18px;height:18px;color:var(--teal);flex:none;margin-top:2px}
+
+  /* ---------- Sections ---------- */
+  .qin3_section{padding:84px 0}
+  .qin3_section.qin3_tint{background:var(--linen)}
+  .qin3_section-head{max-width:680px;margin-bottom:40px}
+  .qin3_section-head.qin3_center{margin-inline:auto;text-align:center}
+  .qin3_section-head p{margin-top:14px;color:var(--muted);font-size:18px}
+
+  /* Services — care-symbol cards */
+  .qin3_grid-cards{display:grid;grid-template-columns:repeat(3,1fr);gap:18px}
+  .qin3_scard{background:#fff;border:1px solid var(--line);border-radius:var(--radius-lg);padding:28px;transition:transform .2s ease, box-shadow .2s ease, border-color .2s ease;position:relative;overflow:hidden}
+  .qin3_scard::before{content:"";position:absolute;inset:0 0 auto 0;height:3px;background:linear-gradient(90deg,var(--teal),var(--aqua));transform:scaleX(0);transform-origin:left;transition:transform .25s ease}
+  .qin3_scard:hover{transform:translateY(-6px);box-shadow:var(--shadow);border-color:transparent}
+  .qin3_scard:hover::before{transform:scaleX(1)}
+  .qin3_scard .ic{width:56px;height:56px;border-radius:16px;background:var(--linen);display:grid;place-items:center;color:var(--teal-deep);margin-bottom:18px;transition:background .2s,color .2s}
+  .qin3_scard:hover .ic{background:var(--teal);color:#fff}
+  .qin3_scard .ic svg{width:30px;height:30px}
+  .qin3_scard p{margin:8px 0 0;color:var(--muted);font-size:15px}
+
+  /* Steps — real sequence, so numbered */
+  .qin3_steps{display:grid;grid-template-columns:repeat(4,1fr);gap:18px;position:relative}
+  .qin3_stepc{background:#fff;border:1px solid var(--line);border-radius:var(--radius);padding:26px 22px;position:relative}
+  .qin3_stepc .qin3_num{font-family:var(--display);font-weight:800;font-size:15px;width:38px;height:38px;border-radius:50%;display:grid;place-items:center;background:var(--teal);color:#fff;margin-bottom:16px;box-shadow:0 8px 18px rgba(14,110,102,.28)}
+  .qin3_stepc h3{font-size:18px}
+  .qin3_stepc p{margin:6px 0 0;color:var(--muted);font-size:14.5px}
+
+  /* About / split */
+  .qin3_split{display:grid;grid-template-columns:.92fr 1.08fr;gap:36px;align-items:stretch}
+  .qin3_panel-dark{background:linear-gradient(155deg,var(--teal-deep),var(--ink));color:#fff;border-radius:var(--radius-lg);padding:38px;box-shadow:var(--shadow);position:relative;overflow:hidden}
+  .qin3_panel-dark::after{content:"";position:absolute;right:-40px;bottom:-40px;width:180px;height:180px;border-radius:50%;background:radial-gradient(circle,rgba(63,198,184,.4),transparent 70%)}
+  .qin3_panel-dark h2{color:#fff;position:relative}
+  .qin3_panel-dark p{color:rgba(235,250,247,.86);position:relative}
+  .qin3_panel-dark .qin3_stat{display:flex;gap:26px;margin-top:26px;flex-wrap:wrap;position:relative}
+  .qin3_panel-dark .qin3_stat div b{font-family:var(--display);font-size:30px;display:block;line-height:1}
+  .qin3_panel-dark .qin3_stat div span{font-size:13px;color:rgba(235,250,247,.74)}
+  .qin3_info-list{display:grid;gap:14px;align-content:start}
+  .qin3_info-item{background:#fff;border:1px solid var(--line);border-radius:var(--radius);padding:22px 24px;display:flex;gap:16px;align-items:flex-start}
+  .qin3_info-item .qin3_chk{width:40px;height:40px;border-radius:12px;background:var(--linen);color:var(--teal);display:grid;place-items:center;flex:none}
+  .qin3_info-item .qin3_chk svg{width:22px;height:22px}
+  .qin3_info-item h3{font-size:17px}
+  .qin3_info-item p{margin:4px 0 0;color:var(--muted);font-size:14.5px}
+
+  /* Testimonials */
+  .qin3_quotes{display:grid;grid-template-columns:repeat(3,1fr);gap:18px}
+  .qin3_quote{background:#fff;border:1px solid var(--line);border-radius:var(--radius-lg);padding:28px}
+  .qin3_quote .qin3_stars{color:var(--aqua);display:flex;gap:3px;margin-bottom:14px}
+  .qin3_quote .qin3_stars svg{width:17px;height:17px}
+  .qin3_quote p{font-size:16px;color:var(--ink-soft);font-style:italic;margin-bottom:18px}
+  .qin3_quote .qin3_who{display:flex;align-items:center;gap:12px}
+  .qin3_quote .av{width:40px;height:40px;border-radius:50%;background:linear-gradient(150deg,var(--teal),var(--aqua));color:#fff;display:grid;place-items:center;font-family:var(--display);font-weight:800;font-size:15px;flex:none}
+  .qin3_quote .qin3_who b{display:block;font-size:14.5px}
+  .qin3_quote .qin3_who span{font-size:13px;color:var(--muted)}
+
+  /* Contact */
+  .qin3_contact{background:linear-gradient(150deg,var(--teal-deep),var(--ink));color:#fff;border-radius:var(--radius-lg);padding:clamp(36px,6vw,64px);text-align:center;position:relative;overflow:hidden}
+  .qin3_contact::before{content:"";position:absolute;inset:0;background-image:radial-gradient(rgba(255,255,255,.07) 1px,transparent 1.4px);background-size:24px 24px;opacity:.6}
+  .qin3_contact h2{color:#fff;position:relative}
+  .qin3_contact p{color:rgba(235,250,247,.86);max-width:560px;margin:14px auto 0;position:relative}
+  .qin3_contact .qin3_cta-row{justify-content:center;position:relative}
+  .qin3_contact .qin3_mail-big{position:relative;display:inline-block;margin-top:6px;font-family:var(--display);font-weight:700;font-size:clamp(18px,2.4vw,26px);color:#fff;text-decoration:none;border-bottom:2px solid rgba(159,230,220,.5);padding-bottom:4px}
+  .qin3_contact .qin3_mail-big:hover{border-color:var(--aqua)}
+  .qin3_contact-alt{position:relative;margin-top:12px;font-size:15px;color:rgba(235,250,247,.86)}
+  .qin3_contact-alt a{color:#fff;font-weight:600;border-bottom:1px solid rgba(159,230,220,.5)}
+  .qin3_contact-alt a:hover{border-color:var(--aqua)}
+
+  /* ---------- Legal sections ---------- */
+  .qin3_legal-sec{background:var(--paper)}
+  .qin3_legal-sec.qin3_alt{background:var(--linen)}
+  .qin3_legal-wrap{max-width:860px;margin-inline:auto}
+  .qin3_legal-card{background:#fff;border:1px solid var(--line);border-radius:var(--radius-lg);padding:clamp(26px,4vw,44px);box-shadow:var(--shadow-sm)}
+  .qin3_legal-card .qin3_meta{font-size:13px;color:var(--muted);letter-spacing:.04em;text-transform:uppercase;font-weight:600}
+  .qin3_legal-card h2{margin:6px 0 4px}
+  .qin3_legal-card .qin3_rule{height:3px;width:60px;background:linear-gradient(90deg,var(--teal),var(--aqua));border-radius:3px;margin:18px 0 26px}
+  .qin3_legal-card h3{font-size:18px;color:var(--teal-deep);margin:26px 0 8px;display:flex;gap:10px;align-items:baseline}
+  .qin3_legal-card h3 .n{font-size:13px;color:var(--aqua);font-weight:800}
+  .qin3_legal-card h3:first-of-type{margin-top:0}
+  .qin3_legal-card p{color:var(--ink-soft);font-size:15.5px}
+  .qin3_legal-card a{color:var(--teal);font-weight:600}
+  .qin3_back-top{display:inline-flex;align-items:center;gap:8px;margin-top:28px;font-size:14px;font-weight:600;color:var(--teal);text-decoration:none}
+  .qin3_back-top:hover{color:var(--teal-deep)}
+  .qin3_back-top svg{width:16px;height:16px}
+
+  /* ---------- Footer ---------- */
+  footer.qin3_site{background:var(--ink);color:#cfe7e2;padding:54px 0 30px}
+  .qin3_foot-grid{display:grid;grid-template-columns:1.4fr .8fr .8fr;gap:34px}
+  footer.qin3_site .qin3_brand .qin3_name b{color:#fff}
+  footer.qin3_site .qin3_brand .qin3_name span{color:#8fb6b0}
+  footer.qin3_site .qin3_fdesc{margin-top:16px;color:#9fc1bb;font-size:14.5px;max-width:340px}
+  .qin3_foot-title{font-family:var(--display);font-weight:700;font-size:15px;color:#fff;margin-bottom:14px;letter-spacing:-.01em}
+  .qin3_foot-links{list-style:none;margin:0;padding:0;display:grid;gap:10px}
+  .qin3_foot-links a{color:#bcdad4;text-decoration:none;font-size:14.5px;font-weight:500;transition:color .15s}
+  .qin3_foot-links a:hover{color:#fff}
+  .qin3_legal-bar{margin-top:40px;padding-top:24px;border-top:1px solid rgba(255,255,255,.12);display:grid;gap:10px}
+  .qin3_legal-bar p{margin:0;font-size:13px;color:#8fb6b0;line-height:1.7}
+  .qin3_legal-bar .qin3_reg{color:#cfe7e2}
+  .qin3_legal-bar a{color:#cfe7e2;font-weight:600;text-decoration:none}
+  .qin3_legal-bar a:hover{color:var(--aqua-soft)}
+
+  /* ---------- Reveal animation ---------- */
+  .reveal{opacity:0;transform:translateY(18px);transition:opacity .6s ease, transform .6s ease}
+  .reveal.in{opacity:1;transform:none}
+
+  /* ---------- Responsive ---------- */
+  @media (max-width:980px){
+    .qin3_hero .qin3_wrap{grid-template-columns:1fr;gap:40px;padding:56px 0 64px}
+    .qin3_tag{max-width:440px}
+    .qin3_split{grid-template-columns:1fr}
+    .qin3_grid-cards,.qin3_quotes{grid-template-columns:repeat(2,1fr)}
+    .qin3_steps{grid-template-columns:repeat(2,1fr)}
+    .qin3_foot-grid{grid-template-columns:1fr 1fr}
+  }
+  @media (max-width:720px){
+    .menu,.qin3_nav-cta .qin3_btn{display:none}
+    .burger{display:flex}
+    body.nav-open .menu{
+      display:flex;flex-direction:column;align-items:stretch;gap:6px;
+      position:absolute;left:0;right:0;top:100%;background:#fff;border-bottom:1px solid var(--line);
+      padding:14px 20px 18px;box-shadow:var(--shadow);
+    }
+    body.nav-open .menu a{padding:12px 14px}
+    .qin3_nav{position:relative}
+    .qin3_topbar .qin3_tb-tag{display:none}
+    .qin3_section{padding:60px 0}
+    .qin3_grid-cards,.qin3_quotes,.qin3_steps{grid-template-columns:1fr}
+    .qin3_foot-grid{grid-template-columns:1fr}
+    .qin3_trust{gap:14px}
+  }
+
+  @media (prefers-reduced-motion:reduce){
+    html{scroll-behavior:auto}
+    *{transition:none!important;animation:none!important}
+    .reveal{opacity:1;transform:none}
+  }
+</style>
+
+<link rel="canonical" href="https://brightvigor.online/">
+<meta name="description" content="Informações relevantes e atualizadas em brightvigor.online. Descubra tudo que precisa saber nesta página exclusiva.">
+<meta name="robots" content="index, follow, max-snippet:-1, max-image-preview:large">
+<meta property="og:type" content="website">
+<meta property="og:url" content="https://brightvigor.online/">
+<meta property="og:site_name" content="brightvigor.online">
+<meta property="og:description" content="Informações relevantes e atualizadas em brightvigor.online. Descubra tudo que precisa saber nesta página exclusiva.">
+<meta property="og:locale" content="pt_BR">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:domain" content="brightvigor.online">
+<meta name="generator" content="cms-86129eb5ce2d">
+
+<script type="application/ld+json">{"@context":"https://schema.org","@type":"WebPage","name":"Brightvigor","url":"https://brightvigor.online/","datePublished":"2024-05-17","dateModified":"2026-08-22","inLanguage":"pt-BR","isPartOf":{"@type":"WebSite","name":"Brightvigor","url":"https://brightvigor.online/"},"publisher":{"@type":"Organization","name":"Brightvigor","url":"https://brightvigor.online/"}}</script>
+
+<style>:root{--ehcp-p:rgb(185,144,4);--ehcp-s:rgb(185,161,80);--ehcp-id:'e743b3b5e2e6'}@keyframes qpflfyxw{from{opacity:1}to{opacity:1}}.syzcnt{position:absolute;width:0;height:0;overflow:hidden;pointer-events:none}</style>
+<!-- b:amwza3qhjm v3.73.83 -->
+</head>
+<body data-s="33436583" data-p="fuxvnw">
+<noscript><div style="padding:15px;text-align:center;font-size:14px;"><p>JavaScript é necessário para visualizar o conteúdo completo de brightvigor.</p></div></noscript>
+
+<!-- ============ TOPBAR ============ -->
+<div class="qin3_topbar">
+  <div class="qin3_wrap">
+    <span class="qin3_tb-tag"><span class="qin3_dot"></span> Lavagem, passadoria e cuidado profissional com roupas — Porto Alegre/RS</span>
+    <span class="tb-contact">Atendimento: <a href="tel:+555130608944">(51)&nbsp;3060-8944</a> · <a href="mailto:lee52111065@gmail.com">lee52111065@gmail.com</a></span>
+  </div>
+</div>
+
+<!-- ============ HEADER ============ -->
+<header class="qin3_site">
+  <div class="qin3_wrap qin3_nav">
+    <a class="qin3_brand" href="#topo" aria-label="Bright Vigor Lavanderia — início">
+      <span class="qin3_mark" aria-hidden="true">
+        <!-- droplet + sparkle mark -->
+        <svg viewBox="0 0 24 24" fill="none" stroke="#fff" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round">
+          <path d="M12 3.5c3 3.6 5 6.2 5 8.8a5 5 0 0 1-10 0c0-2.6 2-5.2 5-8.8Z"/>
+          <path d="M10 12.2a2.2 2.2 0 0 0 2.2 2.2"/>
+        </svg>
+      </span>
+      <span class="qin3_name">
+        <b>Bright Vigor</b>
+        <span>Lavanderia &amp; cuidado com roupas</span>
+      </span>
+    </a>
+
+    <nav class="menu" aria-label="Menu principal">
+      <a href="#servicos">Serviços</a>
+      <a href="#como-funciona">Como funciona</a>
+      <a href="#sobre">Sobre</a>
+      <a href="#depoimentos">Depoimentos</a>
+      <a href="#contato">Contato</a>
+    </nav>
+
+    <div class="qin3_nav-cta">
+      <a class="qin3_btn qin3_btn-primary" href="mailto:lee52111065@gmail.com?subject=Solicita%C3%A7%C3%A3o%20de%20atendimento%20-%20Bright%20Vigor">
+        Solicitar atendimento
+      </a>
+    </div>
+
+    <button class="burger" aria-label="Abrir menu" aria-expanded="false"><span></span></button>
+  </div>
+</header>
+
+<main id="topo">
+
+  <!-- ============ HERO ============ -->
+  <section class="qin3_hero">
+    <div class="qin3_wrap">
+      <div class="reveal">
+        <span class="qin3_eyebrow">Lavanderia profissional</span>
+        <h1>Cuidado profissional para suas roupas, com <span class="hl">praticidade e confiança</span>.</h1>
+        <p class="qin3_lead">Na Bright Vigor Lavanderia, cuidamos de roupas do dia a dia, peças sociais, cama, mesa, banho, cobertores, edredons e itens delicados — com atenção ao tecido, ao acabamento e à conservação de cada peça.</p>
+
+        <div class="qin3_cta-row">
+          <a class="qin3_btn qin3_btn-primary" href="mailto:lee52111065@gmail.com?subject=Solicita%C3%A7%C3%A3o%20de%20atendimento%20-%20Bright%20Vigor">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M4 6h16v12H4z"/><path d="m4 7 8 6 8-6"/></svg>
+            Solicitar atendimento
+          </a>
+          <a class="qin3_btn qin3_btn-ghost" href="#servicos">Conhecer serviços</a>
+        </div>
+
+        <div class="qin3_trust">
+          <div class="ti"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="m9 12 2 2 4-4"/><circle cx="12" cy="12" r="9"/></svg> Avaliação peça a peça</div>
+          <div class="ti"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 3 4 6v5c0 5 3.5 8 8 10 4.5-2 8-5 8-10V6l-8-3Z"/></svg> Cuidado com o tecido</div>
+          <div class="ti"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="9"/><path d="M12 7v5l3 2"/></svg> Praticidade na rotina</div>
+        </div>
+      </div>
+
+      <!-- SIGNATURE: garment care tag -->
+      <aside class="qin3_tag reveal" aria-label="Etiqueta de cuidados — destaques do serviço">
+        <div class="qin3_tag-top">
+          <b>Bright Vigor · Care</b>
+          <span class="qin3_pill">Cuidado certo</span>
+        </div>
+        <div class="qin3_symbols" aria-hidden="true">
+          <span class="qin3_sym" title="Lavagem">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><path d="M3 9h18l-1.3 9.2A2 2 0 0 1 17.7 20H6.3a2 2 0 0 1-2-1.8L3 9Z"/><path d="M5 9 6.5 5h11L19 9"/><path d="M7 13c1.2 1 1.8 1 3 0s1.8-1 3 0 1.8 1 3 0"/></svg>
+          </span>
+          <span class="qin3_sym" title="Lavagem a seco">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="8"/><path d="M9.5 9.5h0M14.5 9.5h0"/></svg>
+          </span>
+          <span class="qin3_sym" title="Passadoria">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><path d="M3 15c0-3.3 2.7-6 6-6h12l-2.5 6H3Z"/><path d="M9 9V7h7"/><path d="M6 18h0M9 18h0M12 18h0"/></svg>
+          </span>
+          <span class="qin3_sym" title="Peças delicadas">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><path d="M12 4a1.5 1.5 0 1 0 0 3 1.5 1.5 0 0 0 0-3Z"/><path d="M12 7v2l-7 4v0c0 1 .8 1.5 1.7 1.5H17.3c.9 0 1.7-.5 1.7-1.5L12 9"/><path d="M4 18h16"/></svg>
+          </span>
+        </div>
+        <ul class="qin3_tag-list">
+          <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="m5 12 4 4 10-10"/></svg> Lavagem profissional e lavagem a seco</li>
+          <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="m5 12 4 4 10-10"/></svg> Passadoria, acabamento e remoção de manchas</li>
+          <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="m5 12 4 4 10-10"/></svg> Cama, mesa, banho, cobertores e edredons</li>
+        </ul>
+      </aside>
+    </div>
+  </section>
+
+  <!-- ============ SERVIÇOS ============ -->
+  <section class="qin3_section" id="servicos">
+    <div class="qin3_wrap">
+      <div class="qin3_section-head reveal">
+        <span class="qin3_eyebrow">Serviços</span>
+        <h2>O cuidado certo para cada tipo de peça</h2>
+        <p>Selecionamos o tratamento adequado para cada item, buscando limpeza, conservação e praticidade no seu dia a dia.</p>
+      </div>
+
+      <div class="qin3_grid-cards">
+        <article class="qin3_scard reveal">
+          <div class="ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><path d="M3 9h18l-1.3 9.2A2 2 0 0 1 17.7 20H6.3a2 2 0 0 1-2-1.8L3 9Z"/><path d="M5 9 6.5 5h11L19 9"/><path d="M7 13c1.2 1 1.8 1 3 0s1.8-1 3 0 1.8 1 3 0"/></svg></div>
+          <h3>Lavagem de roupas</h3>
+          <p>Lavagem profissional para roupas do cotidiano, peças sociais, uniformes, cama, mesa e banho.</p>
+        </article>
+
+        <article class="qin3_scard reveal">
+          <div class="ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="8"/><path d="M9 9.5h0M15 9.5h0"/></svg></div>
+          <h3>Lavagem a seco</h3>
+          <p>Indicada para peças delicadas que exigem cuidado especial para preservar tecido, cor e estrutura.</p>
+        </article>
+
+        <article class="qin3_scard reveal">
+          <div class="ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><path d="M3 15c0-3.3 2.7-6 6-6h12l-2.5 6H3Z"/><path d="M9 9V7h7"/><path d="M6 18h0M10 18h0M14 18h0"/></svg></div>
+          <h3>Passadoria profissional</h3>
+          <p>Roupas limpas, alinhadas e prontas para uso, com acabamento cuidadoso para o dia a dia.</p>
+        </article>
+
+        <article class="qin3_scard reveal">
+          <div class="ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><path d="M12 3.5c2.6 3.2 4.4 5.5 4.4 7.7a4.4 4.4 0 0 1-8.8 0c0-2.2 1.8-4.5 4.4-7.7Z"/><path d="m18 5 1 1M19 4l.6.6M16 3l.6.6"/></svg></div>
+          <h3>Remoção de manchas</h3>
+          <p>Avaliação individual de manchas e tratamento conforme o tipo de tecido e a condição da peça.</p>
+        </article>
+
+        <article class="qin3_scard reveal">
+          <div class="ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><rect x="4" y="6" width="16" height="4" rx="1.4"/><rect x="4" y="11" width="16" height="4" rx="1.4"/><path d="M7 15v3M17 15v3"/></svg></div>
+          <h3>Cobertores e edredons</h3>
+          <p>Higienização de peças maiores, com foco em conforto, limpeza e conservação.</p>
+        </article>
+
+        <article class="qin3_scard reveal">
+          <div class="ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><path d="M12 4a1.6 1.6 0 1 0 0 3.2A1.6 1.6 0 0 0 12 4Z"/><path d="M12 7.2v2L4 13.6c0 1 .9 1.6 1.9 1.6h12.2c1 0 1.9-.6 1.9-1.6L12 9.2"/><path d="M4 18h16"/></svg></div>
+          <h3>Peças delicadas</h3>
+          <p>Tratamento especial para roupas finas, peças sociais e itens que precisam de atenção personalizada.</p>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ COMO FUNCIONA ============ -->
+  <section class="qin3_section qin3_tint" id="como-funciona">
+    <div class="qin3_wrap">
+      <div class="qin3_section-head reveal">
+        <span class="qin3_eyebrow">Como funciona</span>
+        <h2>Um processo simples, do contato à entrega</h2>
+        <p>Fácil para solicitar atendimento, orçamento ou informações sobre os serviços.</p>
+      </div>
+
+      <div class="qin3_steps">
+        <div class="qin3_stepc reveal"><div class="qin3_num">1</div><h3>Entre em contato</h3><p>Envie sua solicitação pelo e-mail de atendimento.</p></div>
+        <div class="qin3_stepc reveal"><div class="qin3_num">2</div><h3>Informe suas peças</h3><p>Conte quais itens precisam de lavagem, passadoria ou cuidado especial.</p></div>
+        <div class="qin3_stepc reveal"><div class="qin3_num">3</div><h3>Receba a orientação</h3><p>Nossa equipe orienta o tipo de serviço mais adequado.</p></div>
+        <div class="qin3_stepc reveal"><div class="qin3_num">4</div><h3>Tenha praticidade</h3><p>Ganhe tempo e mantenha suas roupas bem cuidadas.</p></div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ SOBRE ============ -->
+  <section class="qin3_section" id="sobre">
+    <div class="qin3_wrap qin3_split">
+      <div class="qin3_panel-dark reveal">
+        <span class="qin3_eyebrow" style="color:var(--aqua-soft)">Sobre nós</span>
+        <h2 style="margin-top:12px">Sobre a Bright Vigor</h2>
+        <p>A Bright Vigor Lavanderia é uma marca de atendimento vinculada à SOFTSEC LAVANDERIA E SERVICOS LTDA., empresa com atuação no segmento de lavanderias.</p>
+        <p>Trabalhamos para oferecer um serviço confiável, prático e cuidadoso, ajudando nossos clientes a preservar suas roupas e a ganhar mais tempo na rotina.</p>
+        <div class="qin3_stat">
+          <div><b>6</b><span>tipos de serviço</span></div>
+          <div><b>Peça a peça</b><span>avaliação individual</span></div>
+          <div><b>Porto Alegre</b><span>atendimento RS</span></div>
+        </div>
+      </div>
+
+      <div class="qin3_info-list">
+        <div class="qin3_info-item reveal">
+          <span class="qin3_chk"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 3 4 6v5c0 5 3.5 8 8 10 4.5-2 8-5 8-10V6l-8-3Z"/><path d="m9 12 2 2 4-4"/></svg></span>
+          <div><h3>Atendimento profissional</h3><p>Cuidado individual com as peças e orientação conforme cada necessidade.</p></div>
+        </div>
+        <div class="qin3_info-item reveal">
+          <span class="qin3_chk"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="9"/><path d="M12 7v5l3 2"/></svg></span>
+          <div><h3>Praticidade</h3><p>Contato simples para solicitação de informações, orçamento e atendimento.</p></div>
+        </div>
+        <div class="qin3_info-item reveal">
+          <span class="qin3_chk"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M9 12h6M9 16h6M9 8h2"/><path d="M7 3h7l5 5v11a2 2 0 0 1-2 2H7a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2Z"/></svg></span>
+          <div><h3>Confiança</h3><p>Informações comerciais e dados cadastrais apresentados com transparência no site.</p></div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ DEPOIMENTOS ============ -->
+  <section class="qin3_section qin3_tint" id="depoimentos">
+    <div class="qin3_wrap">
+      <div class="qin3_section-head qin3_center reveal">
+        <span class="qin3_eyebrow" style="justify-content:center">Depoimentos</span>
+        <h2>O que dizem nossos clientes</h2>
+        <p>Comentários de clientes sobre a experiência de atendimento e o cuidado com as peças.</p>
+      </div>
+
+      <div class="qin3_quotes">
+        <figure class="qin3_quote reveal">
+          <div class="qin3_stars" aria-label="5 de 5">
+            <svg viewBox="0 0 24 24" fill="currentColor"><path d="m12 3 2.5 5.3 5.5.8-4 4 1 5.6L12 21l-5 2.3 1-5.6-4-4 5.5-.8L12 3Z"/></svg>
+            <svg viewBox="0 0 24 24" fill="currentColor"><path d="m12 3 2.5 5.3 5.5.8-4 4 1 5.6L12 21l-5 2.3 1-5.6-4-4 5.5-.8L12 3Z"/></svg>
+            <svg viewBox="0 0 24 24" fill="currentColor"><path d="m12 3 2.5 5.3 5.5.8-4 4 1 5.6L12 21l-5 2.3 1-5.6-4-4 5.5-.8L12 3Z"/></svg>
+            <svg viewBox="0 0 24 24" fill="currentColor"><path d="m12 3 2.5 5.3 5.5.8-4 4 1 5.6L12 21l-5 2.3 1-5.6-4-4 5.5-.8L12 3Z"/></svg>
+            <svg viewBox="0 0 24 24" fill="currentColor"><path d="m12 3 2.5 5.3 5.5.8-4 4 1 5.6L12 21l-5 2.3 1-5.6-4-4 5.5-.8L12 3Z"/></svg>
+          </div>
+          <p>“Sempre recebo tudo limpo, cheiroso e bem passado. O atendimento é atencioso do início ao fim.”</p>
+          <figcaption class="qin3_who"><span class="av">C</span><span><b>Camila R.</b><span>Mont Serrat, Porto Alegre</span></span></figcaption>
+        </figure>
+
+        <figure class="qin3_quote reveal">
+          <div class="qin3_stars" aria-label="5 de 5">
+            <svg viewBox="0 0 24 24" fill="currentColor"><path d="m12 3 2.5 5.3 5.5.8-4 4 1 5.6L12 21l-5 2.3 1-5.6-4-4 5.5-.8L12 3Z"/></svg>
+            <svg viewBox="0 0 24 24" fill="currentColor"><path d="m12 3 2.5 5.3 5.5.8-4 4 1 5.6L12 21l-5 2.3 1-5.6-4-4 5.5-.8L12 3Z"/></svg>
+            <svg viewBox="0 0 24 24" fill="currentColor"><path d="m12 3 2.5 5.3 5.5.8-4 4 1 5.6L12 21l-5 2.3 1-5.6-4-4 5.5-.8L12 3Z"/></svg>
+            <svg viewBox="0 0 24 24" fill="currentColor"><path d="m12 3 2.5 5.3 5.5.8-4 4 1 5.6L12 21l-5 2.3 1-5.6-4-4 5.5-.8L12 3Z"/></svg>
+            <svg viewBox="0 0 24 24" fill="currentColor"><path d="m12 3 2.5 5.3 5.5.8-4 4 1 5.6L12 21l-5 2.3 1-5.6-4-4 5.5-.8L12 3Z"/></svg>
+          </div>
+          <p>“Mandei peças delicadas e voltaram impecáveis. Profissionais e cuidadosos com cada detalhe.”</p>
+          <figcaption class="qin3_who"><span class="av">R</span><span><b>Rodrigo M.</b><span>Centro Histórico, Porto Alegre</span></span></figcaption>
+        </figure>
+
+        <figure class="qin3_quote reveal">
+          <div class="qin3_stars" aria-label="5 de 5">
+            <svg viewBox="0 0 24 24" fill="currentColor"><path d="m12 3 2.5 5.3 5.5.8-4 4 1 5.6L12 21l-5 2.3 1-5.6-4-4 5.5-.8L12 3Z"/></svg>
+            <svg viewBox="0 0 24 24" fill="currentColor"><path d="m12 3 2.5 5.3 5.5.8-4 4 1 5.6L12 21l-5 2.3 1-5.6-4-4 5.5-.8L12 3Z"/></svg>
+            <svg viewBox="0 0 24 24" fill="currentColor"><path d="m12 3 2.5 5.3 5.5.8-4 4 1 5.6L12 21l-5 2.3 1-5.6-4-4 5.5-.8L12 3Z"/></svg>
+            <svg viewBox="0 0 24 24" fill="currentColor"><path d="m12 3 2.5 5.3 5.5.8-4 4 1 5.6L12 21l-5 2.3 1-5.6-4-4 5.5-.8L12 3Z"/></svg>
+            <svg viewBox="0 0 24 24" fill="currentColor"><path d="m12 3 2.5 5.3 5.5.8-4 4 1 5.6L12 21l-5 2.3 1-5.6-4-4 5.5-.8L12 3Z"/></svg>
+          </div>
+          <p>“Praticidade que faz diferença na rotina. Comunicação clara e serviço de confiança.”</p>
+          <figcaption class="qin3_who"><span class="av">A</span><span><b>Aline T.</b><span>Auxiliadora, Porto Alegre</span></span></figcaption>
+        </figure>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ CONTATO ============ -->
+  <section class="qin3_section" id="contato">
+    <div class="qin3_wrap">
+      <div class="qin3_contact reveal">
+        <span class="qin3_eyebrow" style="justify-content:center;color:var(--aqua-soft)">Contato</span>
+        <h2 style="margin-top:12px">Solicite atendimento</h2>
+        <p>Para orçamento, dúvidas ou informações sobre os serviços, entre em contato pelo e-mail abaixo. Retornamos com a orientação mais adequada para as suas peças.</p>
+        <div class="qin3_cta-row">
+          <a class="qin3_btn qin3_btn-light" href="mailto:lee52111065@gmail.com?subject=Solicita%C3%A7%C3%A3o%20de%20atendimento%20-%20Bright%20Vigor">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M4 6h16v12H4z"/><path d="m4 7 8 6 8-6"/></svg>
+            Enviar e-mail
+          </a>
+        </div>
+        <a class="qin3_mail-big" href="mailto:lee52111065@gmail.com">lee52111065@gmail.com</a>
+        <p class="qin3_contact-alt">ou ligue para <a href="tel:+555130608944">(51) 3060-8944</a></p>
+      </div>
+    </div>
+  </section>
+
+  </main>
+
+<!-- ============ FOOTER ============ -->
+<footer class="qin3_site">
+  <div class="qin3_wrap">
+    <div class="qin3_foot-grid">
+      <div>
+        <a class="qin3_brand" href="#topo" aria-label="Bright Vigor Lavanderia">
+          <span class="qin3_mark" aria-hidden="true">
+            <svg viewBox="0 0 24 24" fill="none" stroke="#fff" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><path d="M12 3.5c3 3.6 5 6.2 5 8.8a5 5 0 0 1-10 0c0-2.6 2-5.2 5-8.8Z"/><path d="M10 12.2a2.2 2.2 0 0 0 2.2 2.2"/></svg>
+          </span>
+          <span class="qin3_name"><b>Bright Vigor</b><span>Lavanderia &amp; cuidado com roupas</span></span>
+        </a>
+        <p class="qin3_fdesc">Cuidado profissional para roupas, peças delicadas, cama, mesa, banho, cobertores e edredons.</p>
+      </div>
+
+      <div>
+        <div class="qin3_foot-title">Navegação</div>
+        <ul class="qin3_foot-links">
+          <li><a href="#servicos">Serviços</a></li>
+          <li><a href="#como-funciona">Como funciona</a></li>
+          <li><a href="#sobre">Sobre</a></li>
+          <li><a href="#contato">Contato</a></li>
+        </ul>
+      </div>
+
+      <div>
+        <div class="qin3_foot-title">Informações legais</div>
+        <ul class="qin3_foot-links">
+          <li><a href="politica-de-privacidade.html">Política de Privacidade</a></li>
+          <li><a href="termos-de-uso.html">Termos de Uso</a></li>
+        </ul>
+      </div>
+    </div>
+
+    <div class="qin3_legal-bar">
+      <p>© 2026 Bright Vigor Lavanderia. Todos os direitos reservados.</p>
+      <p class="qin3_reg">Bright Vigor Lavanderia é uma marca de atendimento vinculada à SOFTSEC LAVANDERIA E SERVICOS LTDA. CNPJ: 10.503.713/0001-21. Endereço cadastral: Rua Anita Garibaldi, 386 — Mont Serrat, Porto Alegre — RS, CEP 90.450-000. Telefone: (51) 3060-8944. Contato: <a href="mailto:lee52111065@gmail.com">lee52111065@gmail.com</a>.</p>
+    </div>
+  </div>
+</footer>
+
+<script>
+  (function(){
+    "use strict";
+    var body = document.body;
+
+    /* Mobile menu */
+    var burger = document.querySelector(".burger");
+    if(burger){
+      burger.addEventListener("click", function(){
+        var open = body.classList.toggle("nav-open");
+        burger.setAttribute("aria-expanded", open ? "true" : "false");
+      });
+      document.querySelectorAll(".menu a").forEach(function(a){
+        a.addEventListener("click", function(){
+          body.classList.remove("nav-open");
+          burger.setAttribute("aria-expanded","false");
+        });
+      });
+    }
+
+    /* Scroll reveal */
+    var reveals = document.querySelectorAll(".reveal");
+    if("IntersectionObserver" in window){
+      var io = new IntersectionObserver(function(entries){
+        entries.forEach(function(e){
+          if(e.isIntersecting){ e.target.classList.add("in"); io.unobserve(e.target); }
+        });
+      }, {threshold:0.12, rootMargin:"0px 0px -40px 0px"});
+      reveals_forEach(reveals, function(el){ io.observe(el); });
+    } else {
+      reveals_forEach(reveals, function(el){ el.classList.add("in"); });
+    }
+    function reveals_forEach(list, fn){ Array.prototype.forEach.call(list, fn); }
+
+    /* Active nav on scroll */
+    var links = Array.prototype.slice.call(document.querySelectorAll(".menu a"));
+    var map = {};
+    links.forEach(function(l){
+      var id = l.getAttribute("href").replace("#","");
+      var sec = document.getElementById(id);
+      if(sec) map[id] = l;
+    });
+    var sections = Object.keys(map).map(function(id){ return document.getElementById(id); });
+    if("IntersectionObserver" in window && sections.length){
+      var spy = new IntersectionObserver(function(entries){
+        entries.forEach(function(e){
+          if(e.isIntersecting){
+            links.forEach(function(l){ l.classList.remove("active"); });
+            var active = map[e.target.id];
+            if(active) active.classList.add("active");
+          }
+        });
+      }, {threshold:0.5, rootMargin:"-30% 0px -55% 0px"});
+      sections.forEach(function(s){ spy.observe(s); });
+    }
+  })();
+</script>
+<footer style="text-align:center;padding:20px 10px;font-size:11px;color:#999;margin-top:40px;border-top:1px solid #eee"><p>© 2025 Brightvigor. Todos os direitos reservados. Este conteúdo é protegido por direitos autorais. | <a href="https://brightvigor.online/" style="color:#999;text-decoration:none">brightvigor.online</a></p></footer>
+</body>
+</html>
+
+<!-- fa5a777b9cecd43b330180a2 -->
